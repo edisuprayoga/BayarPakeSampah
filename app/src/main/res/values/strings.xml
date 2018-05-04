@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Bayar Pake Sampah</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_again">Konfirmasi Password</string>
+    <string name="prompt_msg">Tulis pesan</string>
+    <string name="action_sign_in">Masuk atau Daftar</string>
+    <string name="action_register">Daftar</string>
+    <string name="action_sign_in_short">Masuk</string>
+    <string name="action_sign_up">Daftar</string>
+    <string name="action_send">Kirim</string>
+    <string name="error_invalid_email">Email tidak falid!</string>
+    <string name="error_invalid_password">Password terlalu pendek!</string>
+    <string name="error_incorrect_password">Password salah!</string>
+    <string name="error_field_required">Lengkapi data!</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="abadan">powered by abadan</string>
+
+</resources>

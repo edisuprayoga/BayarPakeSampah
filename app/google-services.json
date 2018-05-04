@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "610357826787",
+    "firebase_url": "https://bayar-pake-sampah.firebaseio.com",
+    "project_id": "bayar-pake-sampah",
+    "storage_bucket": "bayar-pake-sampah.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610357826787:android:b4113a48e71d3c19",
+        "android_client_info": {
+          "package_name": "id.co.abadan.bayarpakesampah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610357826787-q9a1krkbkv9r80jp9p5sg8si1mb98tle.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWuzybRe55PEzDBFWEdQKaja-M8P9D5UY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
