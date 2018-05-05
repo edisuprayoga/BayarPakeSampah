@@ -12,19 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".PointActivity" />
         <activity android:name=".IsipointActivity" />
         <activity android:name=".TukarpointActivity" />
-        <activity android:name=".ProdukActivity"></activity>
+        <activity android:name=".ProdukActivity"/>
     </application>
 
 </manifest>

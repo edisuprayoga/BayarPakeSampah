@@ -18,5 +18,12 @@
         completions."
     </string>
     <string name="abadan">powered by abadan</string>
+    <string name="saldo">Saldo:</string>
+    <string name="history">History</string>
+    <string name="setting">Setting</string>
+    <string name="point_saya">Point Saya</string>
+    <string name="isi_point">Isi Point</string>
+    <string name="tukar_point">Tukar Point</string>
+    <string name="info_produk">Info Produk</string>
 
 </resources>
