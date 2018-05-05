@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/background_masuk"
@@ -61,80 +60,73 @@
             android:paddingStart="@dimen/activity_horizontal_margin"
             android:paddingEnd="@dimen/activity_horizontal_margin"
             android:stretchColumns="*"
-            android:gravity="center">
+            android:gravity="center"
+            android:background="@color/white">
 
             <TableRow
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:gravity="center">
-                <ImageButton
+                <Button
                     android:id="@+id/point"
                     android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/ic_point"
-                    android:background="@color/blue"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="5sp"
-                    android:textColor="@color/black"
+                    android:layout_height="70dp"
+                    android:drawableStart="@drawable/ic_point"
+                    android:background="@color/blue"
+                    android:scaleType="fitCenter"
+                    android:text="Point Saya"
+                    android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:paddingEnd="@dimen/activity_horizontal_margin"
-                    android:text="Point Saya"/>
+                    android:paddingStart="10dp"/>
 
-                <ImageButton
+
+                <Button
                     android:id="@+id/isipoint"
                     android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/ic_isi_point"
+                    android:layout_height="70dp"
+                    android:drawableStart="@drawable/ic_isi_point"
                     android:background="@color/red"
-                    android:layout_marginStart="@dimen/activity_horizontal_margin"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:scaleType="fitCenter"
                     android:text="Isi Point"
-                    android:paddingStart="5sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:paddingEnd="@dimen/activity_horizontal_margin"/>
+                    android:paddingStart="10dp"/>
+
             </TableRow>
 
             <TableRow
                 android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
                 android:gravity="center">
-                <ImageButton
+                <Button
                     android:id="@+id/tukarpoint"
                     android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/ic_tukar_point"
-                    android:background="@color/orange"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="70dp"
+                    android:drawableStart="@drawable/ic_tukar_point"
+                    android:background="@color/orange"
+                    android:scaleType="fitCenter"
                     android:text="Tukar Point"
-                    android:paddingStart="5sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:paddingEnd="@dimen/activity_horizontal_margin"/>
+                    android:paddingStart="10dp"/>
 
-                <ImageButton
+
+                <Button
                     android:id="@+id/produk"
                     android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/ic_info_produk"
+                    android:layout_height="70dp"
+                    android:drawableStart="@drawable/ic_info_produk"
                     android:background="@color/indigo"
-                    android:layout_marginStart="@dimen/activity_horizontal_margin"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:scaleType="fitCenter"
                     android:text="Info Produk"
-                    android:paddingStart="5sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:paddingEnd="@dimen/activity_horizontal_margin"/>
+                    android:paddingStart="10dp"/>
+
             </TableRow>
         </TableLayout>
 
     </LinearLayout>
-
 </LinearLayout>
 

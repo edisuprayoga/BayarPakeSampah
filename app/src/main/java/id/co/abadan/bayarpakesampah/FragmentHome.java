@@ -7,7 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.Button;
 
 public class FragmentHome extends Fragment {
     Activity context;
@@ -29,28 +29,28 @@ public class FragmentHome extends Fragment {
     @Override
     public void onStart(){
         super.onStart();
-        ImageButton point = (ImageButton)context.findViewById(R.id.point);
+        Button point = (Button)context.findViewById(R.id.point);
         point.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent intent = new Intent(context,PointActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton isipoint = (ImageButton)context.findViewById(R.id.isipoint);
+        Button isipoint = (Button)context.findViewById(R.id.isipoint);
         isipoint.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent intent = new Intent(context,IsipointActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton tukarpoint = (ImageButton)context.findViewById(R.id.tukarpoint);
+        Button tukarpoint = (Button)context.findViewById(R.id.tukarpoint);
         tukarpoint.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent intent = new Intent(context,TukarpointActivity.class);
                 startActivity(intent);
             }
         });
-        ImageButton produk = (ImageButton)context.findViewById(R.id.produk);
+        Button produk = (Button)context.findViewById(R.id.produk);
         produk.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 Intent intent = new Intent(context,ProdukActivity.class);
