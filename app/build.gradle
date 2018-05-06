@@ -1,6 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'abadan'
+            keyPassword 'bismillah'
+            storeFile file('/Users/nugi/Movies/abadan_key')
+        }
+    }
     compileSdkVersion 27
     defaultConfig {
         applicationId "id.co.abadan.bayarpakesampah"
@@ -9,11 +16,18 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testApplicationId '1'
+        versionNameSuffix '1'
+        signingConfig signingConfigs.config
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+            jniDebuggable false
+            renderscriptDebuggable false
+            zipAlignEnabled true
         }
     }
     buildToolsVersion '27.0.3'
