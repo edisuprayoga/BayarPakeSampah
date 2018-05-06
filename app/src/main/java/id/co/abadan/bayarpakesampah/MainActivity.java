@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new FragmentHome(), "HOME");
-        adapter.addFragment(new FragmentHistory(), "HISTORY");
-        adapter.addFragment(new FragmentSetting(), "SETTING");
+        adapter.addFragment(new FragmentHome(), "Beranda");
+        adapter.addFragment(new FragmentHistory(), "Riwayat");
+        adapter.addFragment(new FragmentSetting(), "Pengaturan");
         viewPager.setAdapter(adapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);

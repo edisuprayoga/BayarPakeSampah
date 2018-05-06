@@ -32,28 +32,28 @@ public class FragmentHome extends Fragment {
         Button point = (Button)context.findViewById(R.id.point);
         point.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Intent intent = new Intent(context,PointActivity.class);
+                Intent intent = new Intent(context,SaldoActivity.class);
                 startActivity(intent);
             }
         });
         Button isipoint = (Button)context.findViewById(R.id.isipoint);
         isipoint.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Intent intent = new Intent(context,IsipointActivity.class);
+                Intent intent = new Intent(context,NabungActivity.class);
                 startActivity(intent);
             }
         });
         Button tukarpoint = (Button)context.findViewById(R.id.tukarpoint);
         tukarpoint.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Intent intent = new Intent(context,TukarpointActivity.class);
+                Intent intent = new Intent(context,BelanjaActivity.class);
                 startActivity(intent);
             }
         });
         Button produk = (Button)context.findViewById(R.id.produk);
         produk.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Intent intent = new Intent(context,ProdukActivity.class);
+                Intent intent = new Intent(context,InfoActivity.class);
                 startActivity(intent);
             }
         });

@@ -41,7 +41,7 @@
             android:paddingEnd="10sp"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:text="23000"
+            android:text="0"
             android:layout_toEndOf="@id/text1"
             android:padding="10dp"/>
 
@@ -61,8 +61,6 @@
             android:contentDescription="@string/info_produk" />
     </RelativeLayout>
 
-
-
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,26 +77,26 @@
                 android:id="@+id/point"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:drawableStart="@drawable/ic_point"
+                android:drawableStart="@drawable/ic_dompet"
                 android:background="@drawable/round1"
                 android:scaleType="fitCenter"
                 android:text="@string/point_saya"
                 android:textColor="@color/white"
-                android:textSize="16sp"
                 android:padding="10dp"
+                android:textSize="14sp"
                 tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/isipoint"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:drawableStart="@drawable/ic_isi_point"
+                android:drawableStart="@drawable/ic_nabung"
                 android:background="@drawable/round1"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:scaleType="fitCenter"
                 android:text="@string/isi_point"
+                android:textSize="14sp"
                 android:textColor="@color/white"
-                android:textSize="16sp"
                 android:padding="10dp"
                 tools:ignore="ButtonStyle" />
 
@@ -112,13 +110,13 @@
                 android:id="@+id/tukarpoint"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:drawableStart="@drawable/ic_tukar_point"
+                android:drawableStart="@drawable/ic_belanja"
                 android:background="@drawable/round1"
                 android:scaleType="fitCenter"
                 android:text="@string/tukar_point"
                 android:textColor="@color/white"
-                android:textSize="16sp"
                 android:padding="10dp"
+                android:textSize="14sp"
                 tools:ignore="ButtonStyle" />
 
 
@@ -126,20 +124,18 @@
                 android:id="@+id/produk"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:drawableStart="@drawable/ic_info_produk"
+                android:drawableStart="@drawable/ic_info"
                 android:background="@drawable/round1"
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:scaleType="fitCenter"
                 android:text="@string/info_produk"
                 android:textColor="@color/white"
-                android:textSize="16sp"
                 android:padding="10dp"
+                android:textSize="14sp"
                 tools:ignore="ButtonStyle" />
 
         </TableRow>
     </TableLayout>
-
-
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -154,4 +150,3 @@
             android:layout_alignParentBottom="true"/>
     </RelativeLayout>
 </LinearLayout>
-

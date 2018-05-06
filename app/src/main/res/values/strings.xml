@@ -19,11 +19,14 @@
     </string>
     <string name="abadan">powered by abadan</string>
     <string name="saldo">Saldo:</string>
-    <string name="history">History</string>
-    <string name="setting">Setting</string>
-    <string name="point_saya">Point Saya</string>
-    <string name="isi_point">Isi Point</string>
-    <string name="tukar_point">Tukar Point</string>
-    <string name="info_produk">Info Produk</string>
+    <string name="history">Riwayat</string>
+    <string name="setting">Pengaturan</string>
+    <string name="point_saya">Dompet Ku</string>
+    <string name="isi_point">Nabung Sampah</string>
+    <string name="tukar_point">Belanja Barang</string>
+    <string name="info_produk">Info Lainnya</string>
+    <string name="donasi">Donasi</string>
+    <string name="transfer">Transfer</string>
+    <string name="tunai">Tarik Tunai</string>
 
 </resources>
