@@ -3,9 +3,10 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
-            keyAlias 'abadan'
-            keyPassword 'bismillah'
             storeFile file('/Users/nugi/Movies/abadan_key')
+            keyAlias 'key0'
+            keyPassword 'bismillah'
+            storePassword 'bismillah'
         }
     }
     compileSdkVersion 27
@@ -16,6 +17,8 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        1
         testApplicationId '1'
         versionNameSuffix '1'
         signingConfig signingConfigs.config
@@ -31,6 +34,8 @@ android {
         }
     }
     buildToolsVersion '27.0.3'
+    productFlavors {
+    }
 }
 
 dependencies {
