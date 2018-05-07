@@ -28,5 +28,12 @@
     <string name="donasi">Donasi</string>
     <string name="transfer">Transfer</string>
     <string name="tunai">Tarik Tunai</string>
+    <string name="registrasi">Pendaftaran</string>
+    <string name="back">back</string>
+    <string name="logout">logout</string>
+    <string name="point">0</string>
+    <string name="nabung">nabung</string>
+    <string name="belanja">belanja</string>
+    <string name="info">info</string>
 
 </resources>

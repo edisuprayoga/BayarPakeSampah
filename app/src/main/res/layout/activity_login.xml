@@ -25,7 +25,7 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="18sp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="20dp"
         />
 
     <android.support.design.widget.TextInputLayout
@@ -90,7 +90,7 @@
         android:id="@+id/login_register_button"
         style="?android:textAppearanceMedium"
         android:background="@color/white"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/blue"
         android:onClick="registerNewUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

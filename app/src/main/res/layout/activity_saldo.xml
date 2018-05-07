@@ -7,16 +7,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/point_saya"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:stretchColumns="1"
+        android:background="@color/colorPrimary">
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_back"
+                android:background="@color/colorPrimary"
+                android:text="@string/back"
+                android:padding="10dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/point_saya"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"/>
+        </TableRow>
+
+    </TableLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -49,12 +73,19 @@
             android:paddingEnd="10sp"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:text="23000"
+            android:text="@string/point"
             android:layout_toEndOf="@id/text1"
             android:padding="10dp"/>
 
     </RelativeLayout>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_margin="@dimen/activity_vertical_margin">
 
         <Button
             android:id="@+id/tunai"
@@ -81,7 +112,7 @@
             android:layout_marginEnd="@dimen/activity_vertical_margin"
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:textColor="@color/white"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:background="@drawable/round1"/>
 
         <Button
@@ -90,14 +121,13 @@
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_donasi"
             android:text="@string/donasi"
-            android:layout_marginStart="@dimen/activity_vertical_margin"
-            android:layout_marginEnd="@dimen/activity_vertical_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:padding="14dp"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:padding="16dp"
             android:textColor="@color/white"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:background="@drawable/round1"/>
 
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -109,6 +139,7 @@
             android:text="@string/abadan"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:layout_alignParentBottom="true"/>
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="10dp"/>
     </RelativeLayout>
 </LinearLayout>
