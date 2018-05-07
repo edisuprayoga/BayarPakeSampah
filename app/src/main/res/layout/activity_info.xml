@@ -14,6 +14,7 @@
         android:background="@color/colorPrimary">
         <TableRow>
             <Button
+                android:id="@+id/back_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_back"
@@ -33,6 +34,7 @@
                 android:textStyle="bold" />
 
             <Button
+                android:id="@+id/logout_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/logout"

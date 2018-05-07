@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/batik11"
     android:orientation="vertical"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:stretchColumns="1"
         android:background="@color/colorPrimary">
-        <TableRow>
+        <TableRow tools:ignore="UselessParent">
             <Button
+                android:id="@+id/back_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_back"
@@ -33,6 +33,7 @@
                 android:textStyle="bold" />
 
             <Button
+                android:id="@+id/logout_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/logout"
@@ -41,6 +42,16 @@
         </TableRow>
 
     </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nabung Pake Sampah"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -68,7 +79,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"/>
             </TableRow>
 
             <TableRow>
@@ -80,25 +92,34 @@
                     android:textSize="16sp"/>
 
                 <EditText
+                    android:id="@+id/editText3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="number"
+                    android:textColor="@color/black"/>
+
             </TableRow>
 
-            <TableRow>
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Estimasi harga"
+                    android:text="Estimasi harga: Rp. "
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
 
-                <EditText
+                <TextView
+                    android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:text="@string/point"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
             </TableRow>
 
             <TableRow>
@@ -110,10 +131,13 @@
                     android:textSize="16sp"/>
 
                 <EditText
+                    android:id="@+id/editText5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/black"/>
+
             </TableRow>
 
             <Button

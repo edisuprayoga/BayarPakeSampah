@@ -14,6 +14,7 @@
         android:background="@color/colorPrimary">
         <TableRow>
             <Button
+                android:id="@+id/back_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_back"
@@ -33,6 +34,7 @@
                 android:textStyle="bold" />
 
             <Button
+                android:id="@+id/logout_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/logout"
@@ -93,7 +95,8 @@
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_saldo"
             android:text="@string/tunai"
-            android:padding="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             android:layout_marginStart="@dimen/activity_vertical_margin"
             android:layout_marginEnd="@dimen/activity_vertical_margin"
             android:layout_marginTop="@dimen/activity_vertical_margin"
@@ -107,7 +110,8 @@
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_transfer"
             android:text="@string/transfer"
-            android:padding="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             android:layout_marginStart="@dimen/activity_vertical_margin"
             android:layout_marginEnd="@dimen/activity_vertical_margin"
             android:layout_marginTop="@dimen/activity_vertical_margin"
@@ -122,7 +126,8 @@
             android:drawableStart="@drawable/ic_donasi"
             android:text="@string/donasi"
             android:layout_margin="@dimen/activity_vertical_margin"
-            android:padding="16dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:background="@drawable/round1"/>

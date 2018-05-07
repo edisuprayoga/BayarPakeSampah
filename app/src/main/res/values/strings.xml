@@ -1,11 +1,10 @@
 <resources>
-    <string name="app_name">Bayar Pake Sampah</string>
+    <string name="app_name">Abadan Apps</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_username">Username</string>
     <string name="prompt_password">Password</string>
     <string name="prompt_password_again">Konfirmasi Password</string>
     <string name="prompt_msg">Tulis pesan</string>
-    <string name="action_sign_in">Masuk atau Daftar</string>
     <string name="action_register">Daftar</string>
     <string name="action_sign_in_short">Masuk</string>
     <string name="action_sign_up">Daftar</string>
@@ -14,10 +13,9 @@
     <string name="error_invalid_password">Password terlalu pendek!</string>
     <string name="error_incorrect_password">Password salah!</string>
     <string name="error_field_required">Lengkapi data!</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
-    <string name="abadan">powered by abadan</string>
+    <string name="permission_rationale">"Izin kontak diperlukan untuk kelengkapan registrasi."</string>
+
+    <string name="abadan">powered by Abadan</string>
     <string name="saldo">Saldo:</string>
     <string name="history">Riwayat</string>
     <string name="setting">Pengaturan</string>
@@ -31,7 +29,7 @@
     <string name="registrasi">Pendaftaran</string>
     <string name="back">back</string>
     <string name="logout">logout</string>
-    <string name="point">0</string>
+    <string name="point">20.000</string>
     <string name="nabung">nabung</string>
     <string name="belanja">belanja</string>
     <string name="info">info</string>
