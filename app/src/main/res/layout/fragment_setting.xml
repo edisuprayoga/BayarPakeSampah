@@ -82,7 +82,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Telephone: "
+                    android:text="Telepon: "
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
 
@@ -111,23 +111,21 @@
                     android:inputType="text"
                     android:textColor="@color/black"/>
             </TableRow>
-
-            <TableRow
-                android:layout_marginTop="@dimen/activity_horizontal_margin">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                <Button
-                    android:text="Terapkan"
-                    android:drawableStart="@drawable/ic_check"
-                    android:background="@drawable/round1"
-                    android:textColor="@color/white"
-                    android:paddingStart="@dimen/activity_horizontal_margin"
-                    android:paddingEnd="@dimen/activity_horizontal_margin"
-                    android:layout_gravity="end"/>
-            </TableRow>
         </TableLayout>
     </android.support.design.widget.TextInputLayout>
+        <Button
+            android:text="Simpan"
+            android:drawableStart="@drawable/ic_check"
+            android:background="@drawable/round1"
+            android:textColor="@color/white"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
