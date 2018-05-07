@@ -6,18 +6,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class BelanjaActivity extends AppCompatActivity {
+public class TunaiActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_belanja);
+        setContentView(R.layout.activity_tunai);
 
         Button btnBack = (Button) findViewById(R.id.back_btn);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BelanjaActivity.this, MainActivity.class);
+                Intent intent = new Intent(TunaiActivity.this, DompetActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
             }
@@ -27,7 +27,7 @@ public class BelanjaActivity extends AppCompatActivity {
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BelanjaActivity.this, LoginActivity.class);
+                Intent intent = new Intent(TunaiActivity.this, LoginActivity.class);
                 finish();
                 startActivity(intent);
             }

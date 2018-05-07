@@ -7,14 +7,13 @@ import android.view.View;
 import android.widget.Button;
 
 public class InfoActivity extends AppCompatActivity {
-    private Button btnBack, btnLogout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
 
-        btnBack = (Button) findViewById(R.id.back_btn);
+        Button btnBack = (Button) findViewById(R.id.back_btn);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,7 +23,7 @@ public class InfoActivity extends AppCompatActivity {
             }
         });
 
-        btnLogout = (Button) findViewById(R.id.logout_btn);
+        Button btnLogout = (Button) findViewById(R.id.logout_btn);
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

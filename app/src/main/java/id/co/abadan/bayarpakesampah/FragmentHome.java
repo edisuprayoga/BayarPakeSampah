@@ -32,7 +32,7 @@ public class FragmentHome extends Fragment {
         Button point = (Button)context.findViewById(R.id.point);
         point.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                Intent intent = new Intent(context,SaldoActivity.class);
+                Intent intent = new Intent(context,DompetActivity.class);
                 startActivity(intent);
             }
         });

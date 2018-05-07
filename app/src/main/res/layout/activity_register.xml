@@ -106,7 +106,7 @@
     <Button
         android:id="@+id/register_sign_up_button"
         style="?android:textAppearanceMedium"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/round1"
         android:textColor="@color/white"
         android:onClick="signUp"
         android:layout_width="match_parent"
@@ -120,7 +120,7 @@
     <Button
         android:id="@+id/register_sign_in_button"
         style="?android:textAppearanceMedium"
-        android:background="@color/white"
+        android:background="@drawable/round2"
         android:textColor="@color/blue"
         android:onClick="signIn"
         android:layout_width="match_parent"

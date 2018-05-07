@@ -26,7 +26,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/belanja"
+                android:text="@string/transfer"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
@@ -41,17 +41,45 @@
                 android:background="@color/colorPrimary"
                 android:textColor="@color/white"/>
         </TableRow>
+
     </TableLayout>
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bayar Pake Sampah"
-        android:layout_marginTop="@dimen/activity_horizontal_margin"
-        android:paddingStart="@dimen/activity_horizontal_margin"
-        android:paddingEnd="@dimen/activity_horizontal_margin"
-        android:textColor="@color/black"
-        android:textSize="20sp"/>
+        android:padding="@dimen/activity_vertical_margin">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/white"
+            android:alpha="0.8"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/saldo"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/saldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/point"
+            android:layout_toEndOf="@id/text1"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -70,7 +98,7 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Jenis Barang: "
+                    android:text="No Tujuan: "
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
 
@@ -79,67 +107,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:textColor="@color/black"/>
             </TableRow>
 
             <TableRow>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nama Barang: "
+                    android:text="Jumlah: Rp. "
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
 
                 <EditText
+                    android:id="@+id/editText3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="text" />
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Harga: "
-                    android:textColor="@color/black"
-                    android:textSize="16sp"/>
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number" />
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Nama Toko: "
-                    android:textColor="@color/black"
-                    android:textSize="16sp"/>
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number" />
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Alamat Toko: "
-                    android:textColor="@color/black"
-                    android:textSize="16sp"/>
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="text" />
+                    android:inputType="number"
+                    android:textColor="@color/black"/>
             </TableRow>
 
             <Button

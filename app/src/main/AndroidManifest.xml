@@ -15,15 +15,19 @@
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".SaldoActivity" />
+        <activity android:name=".DompetActivity" />
         <activity android:name=".NabungActivity" />
         <activity android:name=".BelanjaActivity" />
-        <activity android:name=".InfoActivity"/>
+        <activity android:name=".InfoActivity" />
+        <activity android:name=".TunaiActivity" />
+        <activity android:name=".TransferActivity" />
+        <activity android:name=".DonasiActivity"></activity>
     </application>
 
 </manifest>

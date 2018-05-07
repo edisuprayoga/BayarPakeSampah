@@ -13,19 +13,20 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
         android:src="@drawable/logo"
         android:contentDescription="@string/abadan" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/abadan"
+        android:text="LOGIN"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="18sp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="25dp"
         />
 
     <android.support.design.widget.TextInputLayout
@@ -75,7 +76,7 @@
     <Button
         android:id="@+id/login_sign_in_button"
         style="?android:textAppearanceMedium"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/round1"
         android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -89,7 +90,7 @@
     <Button
         android:id="@+id/login_register_button"
         style="?android:textAppearanceMedium"
-        android:background="@color/white"
+        android:background="@drawable/round2"
         android:textColor="@color/blue"
         android:onClick="registerNewUser"
         android:layout_width="match_parent"

@@ -6,29 +6,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class SaldoActivity extends AppCompatActivity {
-    private Button btnBack, btnLogout;
+public class TransferActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_saldo);
+        setContentView(R.layout.activity_transfer);
 
-        btnBack = (Button) findViewById(R.id.back_btn);
+        Button btnBack = (Button) findViewById(R.id.back_btn);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SaldoActivity.this, MainActivity.class);
+                Intent intent = new Intent(TransferActivity.this, DompetActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
             }
         });
 
-        btnLogout = (Button) findViewById(R.id.logout_btn);
+        Button btnLogout = (Button) findViewById(R.id.logout_btn);
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SaldoActivity.this, LoginActivity.class);
+                Intent intent = new Intent(TransferActivity.this, LoginActivity.class);
                 finish();
                 startActivity(intent);
             }
