@@ -1,134 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="@dimen/activity_horizontal_margin"
     tools:context="id.co.abadan.bayarpakesampah.RegisterActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/registrasi"
-        android:textAllCaps="true"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="10dp" />
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColorHint="@color/black"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp">
 
-        <AutoCompleteTextView
-            android:id="@+id/register_username"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/prompt_username"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/registrasi"
+            android:textAlignment="center"
+            android:textAllCaps="true"
             android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:inputType="textNoSuggestions"
-            android:imeOptions="actionNext"
-            android:maxLines="1"
-            android:textIsSelectable="false"/>
+            android:textSize="20sp" />
 
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColorHint="@color/black"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp">
-
-        <AutoCompleteTextView
-            android:id="@+id/register_email"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/prompt_email"
-            android:textColor="@color/black"
-            android:imeOptions="actionNext"
-            android:textColorHint="@color/black"
-            android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:textIsSelectable="false"/>
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColorHint="@color/black">
 
-    </android.support.design.widget.TextInputLayout>
+            <AutoCompleteTextView
+                android:id="@+id/register_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_username"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textIsSelectable="false" />
 
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColorHint="@color/black"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp">
+        </android.support.design.widget.TextInputLayout>
 
-        <EditText
-            android:id="@+id/register_password"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:layout_width="match_parent"
-            android:imeOptions="actionNext"
-            android:layout_height="wrap_content"
-            android:hint="@string/prompt_password"
-            android:inputType="textPassword"
-            android:maxLines="1"/>
-
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColorHint="@color/black"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp">
-
-        <EditText
-            android:id="@+id/register_confirm_password"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/prompt_password_again"
-            android:imeActionId="@+id/register_form_finished"
-            android:imeActionLabel="@string/action_sign_up"
-            android:imeOptions="actionUnspecified"
-            android:inputType="textPassword"
-            android:maxLines="1"
-            tools:ignore="InvalidImeActionId" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColorHint="@color/black">
 
-    </android.support.design.widget.TextInputLayout>
+            <AutoCompleteTextView
+                android:id="@+id/register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textIsSelectable="false" />
 
-    <Button
-        android:id="@+id/register_sign_up_button"
-        style="?android:textAppearanceMedium"
-        android:background="@drawable/round1"
-        android:textColor="@color/white"
-        android:onClick="signUp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/action_sign_up"
-        android:textStyle="bold"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"/>
+        </android.support.design.widget.TextInputLayout>
 
-    <Button
-        android:id="@+id/register_sign_in_button"
-        style="?android:textAppearanceMedium"
-        android:background="@drawable/round2"
-        android:textColor="@color/blue"
-        android:onClick="signIn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/action_sign_in_short"
-        android:textStyle="bold"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColorHint="@color/black">
 
-</LinearLayout>
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColorHint="@color/black">
+
+            <EditText
+                android:id="@+id/register_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password_again"
+                android:imeActionId="@+id/register_form_finished"
+                android:imeActionLabel="@string/action_sign_up"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                tools:ignore="InvalidImeActionId" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/register_sign_up_button"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round1"
+            android:onClick="signUp"
+            android:text="@string/action_sign_up"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/register_sign_in_button"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round2"
+            android:onClick="signIn"
+            android:text="@string/action_sign_in_short"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

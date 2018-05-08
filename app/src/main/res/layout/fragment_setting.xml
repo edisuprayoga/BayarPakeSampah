@@ -1,144 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/batik11"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:orientation="vertical">
 
-    <TableLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:stretchColumns="1"
-        android:padding="@dimen/activity_horizontal_margin">
+        android:layout_height="wrap_content">
 
-        <TableRow
-            android:gravity="center">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pengaturan Akun"
-                android:textColor="@color/black"
-                android:textSize="20sp"/>
-            <Button
-                android:text="Logout"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@color/grey"
-                android:textColor="@color/black"
-                android:layout_gravity="end"/>
-        </TableRow>
-    </TableLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginEnd="@dimen/activity_horizontal_margin"
-        android:background="@color/white">
-
-        <TableLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:stretchColumns="1"
-            android:padding="@dimen/activity_horizontal_margin">
+            android:orientation="vertical">
 
-            <TableRow>
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:stretchColumns="1">
+
+                <TableRow android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pengaturan Akun"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:background="@color/grey"
+                        android:text="Logout"
+                        android:textColor="@color/black" />
+                </TableRow>
+            </TableLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:background="@color/white">
+
+                <TableLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nama: "
-                    android:textColor="@color/black"
-                    android:textSize="16sp"/>
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:stretchColumns="1">
 
-                <EditText
-                    android:id="@+id/editText2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textColor="@color/black"/>
-            </TableRow>
+                    <TableRow>
 
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Email: "
-                    android:textColor="@color/black"
-                    android:textSize="16sp"/>
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nama"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
 
-                <EditText
-                    android:id="@+id/editText3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textEmailAddress"
-                    android:textColor="@color/black"/>
+                        <EditText
+                            android:id="@+id/editText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:textColor="@color/black" />
+                    </TableRow>
 
-            </TableRow>
+                    <TableRow>
 
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Telepon: "
-                    android:textColor="@color/black"
-                    android:textSize="16sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/email"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
 
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="phone"
-                    android:textColor="@color/black"/>
+                        <EditText
+                            android:id="@+id/editText3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/black" />
 
-            </TableRow>
+                    </TableRow>
 
-            <TableRow>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Alamat: "
-                    android:textColor="@color/black"
-                    android:textSize="16sp"/>
+                    <TableRow>
 
-                <EditText
-                    android:id="@+id/editText5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textColor="@color/black"/>
-            </TableRow>
-        </TableLayout>
-    </android.support.design.widget.TextInputLayout>
-        <Button
-            android:text="Simpan"
-            android:drawableStart="@drawable/ic_check"
-            android:background="@drawable/round1"
-            android:textColor="@color/white"
-            android:paddingStart="@dimen/activity_horizontal_margin"
-            android:paddingEnd="@dimen/activity_horizontal_margin"
-            android:layout_gravity="end"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_marginEnd="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/telepon"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
 
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="phone"
+                            android:textColor="@color/black" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alamat: "
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/editText5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:textColor="@color/black" />
+                    </TableRow>
+                </TableLayout>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/round1"
+                android:drawableStart="@drawable/ic_check"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:text="Simpan"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="bottom">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="10dp"
             android:text="@string/abadan"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:layout_alignParentBottom="true"
-            android:paddingBottom="10dp"/>
+            android:textColor="@color/black" />
     </RelativeLayout>
 
 </LinearLayout>

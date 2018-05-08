@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/batik11"
     android:orientation="vertical"
-    android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stretchColumns="1"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorPrimary"
+        android:stretchColumns="1">
+
         <TableRow>
+
             <Button
                 android:id="@+id/back_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/ic_back"
                 android:background="@color/colorPrimary"
-                android:text="@string/back"
+                android:drawableStart="@drawable/ic_back"
                 android:padding="10dp"
-                android:textColor="@color/white"/>
+                android:text="@string/back"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -37,113 +39,127 @@
                 android:id="@+id/logout_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/logout"
                 android:background="@color/colorPrimary"
-                android:textColor="@color/white"/>
+                android:text="@string/logout"
+                android:textColor="@color/white" />
         </TableRow>
 
     </TableLayout>
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/activity_vertical_margin">
-        <TextView
+        android:layout_height="wrap_content">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:background="@color/white"
-            android:alpha="0.8"
-            android:textSize="20sp"
-            android:padding="10dp"/>
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/text1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:text="@string/saldo"
-            android:textSize="20sp"
-            android:padding="10dp"/>
 
-        <TextView
-            android:id="@+id/saldo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:paddingStart="10sp"
-            android:paddingEnd="10sp"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:text="@string/point"
-            android:layout_toEndOf="@id/text1"
-            android:padding="10dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin">
 
-    </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.8"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/white"
-        android:layout_margin="@dimen/activity_vertical_margin">
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/saldo"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/tunai"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_saldo"
-            android:text="@string/tunai"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp"
-            android:layout_marginStart="@dimen/activity_vertical_margin"
-            android:layout_marginEnd="@dimen/activity_vertical_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:background="@drawable/round1"/>
+                <TextView
+                    android:id="@+id/saldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/text1"
+                    android:padding="10dp"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10sp"
+                    android:text="@string/point"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/transfer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_transfer"
-            android:text="@string/transfer"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp"
-            android:layout_marginStart="@dimen/activity_vertical_margin"
-            android:layout_marginEnd="@dimen/activity_vertical_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:background="@drawable/round1"/>
+            </RelativeLayout>
 
-        <Button
-            android:id="@+id/donasi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_donasi"
-            android:text="@string/donasi"
-            android:layout_margin="@dimen/activity_vertical_margin"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:background="@drawable/round1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:background="@color/white"
+                android:orientation="vertical">
 
-    </LinearLayout>
+                <Button
+                    android:id="@+id/tunai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:background="@drawable/round1"
+                    android:drawableStart="@drawable/ic_saldo"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:text="@string/tunai"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/transfer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:background="@drawable/round1"
+                    android:drawableStart="@drawable/ic_transfer"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:text="@string/transfer"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/donasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:background="@drawable/round1"
+                    android:drawableStart="@drawable/ic_donasi"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:text="@string/donasi"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="bottom">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="10dp"
             android:text="@string/abadan"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:layout_alignParentBottom="true"
-            android:paddingBottom="10dp"/>
+            android:textColor="@color/black" />
     </RelativeLayout>
 </LinearLayout>

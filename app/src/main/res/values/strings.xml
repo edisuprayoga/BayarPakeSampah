@@ -33,5 +33,15 @@
     <string name="nabung">nabung</string>
     <string name="belanja">belanja</string>
     <string name="info">info</string>
+    <string name="login">LOGIN</string>
+    <string name="kirim">Kirim</string>
+    <string name="nabung_pake_sampah">Nabung Pake Sampah</string>
+    <string name="jenis_sampah">Jenis Sampah:</string>
+    <string name="berat_kg">Berat: (kg)</string>
+    <string name="estimasi_harga_rp">Estimasi harga: Rp.</string>
+    <string name="lokasi_penjemputan">Lokasi Penjemputan</string>
+    <string name="telepon">Telepon:</string>
+    <string name="email">Email:</string>
+    <string name="nama">Nama:</string>
 
 </resources>
