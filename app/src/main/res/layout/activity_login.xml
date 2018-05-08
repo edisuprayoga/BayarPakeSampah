@@ -9,31 +9,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="@dimen/activity_vertical_margin">
+        android:padding="@dimen/margin_bg">
 
         <ImageView
             android:id="@+id/logo"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="15dp"
+            android:layout_height="70dp"
             android:contentDescription="@string/abadan"
             android:src="@drawable/logo" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="@dimen/margin_xl"
+            android:layout_marginTop="@dimen/margin_sm"
             android:text="@string/login"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textSize="@dimen/text_bg" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
             android:textColorHint="@color/black">
 
             <AutoCompleteTextView
@@ -53,8 +52,8 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
             android:textColorHint="@color/black">
 
             <EditText
@@ -78,9 +77,9 @@
             style="?android:textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
             android:background="@drawable/round1"
             android:onClick="signInExistingUser"
             android:text="@string/action_sign_in_short"
@@ -92,9 +91,10 @@
             style="?android:textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginBottom="@dimen/margin_xl"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
             android:background="@drawable/round2"
             android:onClick="registerNewUser"
             android:text="@string/action_register"

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Abadan Apps</string>
+    <string name="app_name">BayPass</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_username">Username</string>
     <string name="prompt_password">Password</string>
@@ -7,16 +7,15 @@
     <string name="prompt_msg">Tulis pesan</string>
     <string name="action_register">Daftar</string>
     <string name="action_sign_in_short">Masuk</string>
-    <string name="action_sign_up">Daftar</string>
     <string name="action_send">Kirim</string>
-    <string name="error_invalid_email">Email tidak falid!</string>
+    <string name="error_invalid_email">Email tidak valid!</string>
     <string name="error_invalid_password">Password terlalu pendek!</string>
     <string name="error_incorrect_password">Password salah!</string>
     <string name="error_field_required">Lengkapi data!</string>
     <string name="permission_rationale">"Izin kontak diperlukan untuk kelengkapan registrasi."</string>
 
-    <string name="abadan">powered by Abadan</string>
-    <string name="saldo">Saldo:</string>
+    <string name="abadan">abadan.co.id</string>
+    <string name="saldo">Saldo</string>
     <string name="history">Riwayat</string>
     <string name="setting">Pengaturan</string>
     <string name="point_saya">Dompet Ku</string>
@@ -29,19 +28,25 @@
     <string name="registrasi">Pendaftaran</string>
     <string name="back">back</string>
     <string name="logout">logout</string>
-    <string name="point">20.000</string>
+    <string name="point">0</string>
     <string name="nabung">nabung</string>
     <string name="belanja">belanja</string>
     <string name="info">info</string>
     <string name="login">LOGIN</string>
-    <string name="kirim">Kirim</string>
     <string name="nabung_pake_sampah">Nabung Pake Sampah</string>
-    <string name="jenis_sampah">Jenis Sampah:</string>
-    <string name="berat_kg">Berat: (kg)</string>
-    <string name="estimasi_harga_rp">Estimasi harga: Rp.</string>
+    <string name="jenis_sampah">Jenis Sampah</string>
+    <string name="berat_kg">Berat (kg)</string>
+    <string name="estimasi_harga_rp">Estimasi harga Rp.</string>
     <string name="lokasi_penjemputan">Lokasi Penjemputan</string>
-    <string name="telepon">Telepon:</string>
-    <string name="email">Email:</string>
-    <string name="nama">Nama:</string>
+    <string name="telepon">Telepon</string>
+    <string name="nama">Nama</string>
+    <string name="simpan">Simpan</string>
+    <string name="bayar_pake_sampah">Bayar Pake Sampah</string>
+    <string name="jenis_barang">Jenis Barang</string>
+    <string name="nama_barang">Nama Barang</string>
+    <string name="harga">Harga</string>
+    <string name="nama_toko">Nama Toko</string>
+    <string name="alamat_toko">Alamat Toko</string>
+    <string name="pengaturan_akun">Pengaturan Akun</string>
 
 </resources>

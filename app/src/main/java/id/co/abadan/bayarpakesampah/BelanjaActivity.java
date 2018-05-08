@@ -1,6 +1,7 @@
 package id.co.abadan.bayarpakesampah;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,10 @@ public class BelanjaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_belanja);
+        ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setIcon(R.mipmap.ic_logo2);
 
         Button btnBack = (Button) findViewById(R.id.back_btn);
         btnBack.setOnClickListener(new View.OnClickListener() {

@@ -9,25 +9,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="@dimen/activity_horizontal_margin">
+        android:padding="@dimen/margin">
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/margin_bg"
+            android:layout_marginTop="@dimen/margin_sm"
             android:text="@string/registrasi"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="@dimen/text_xl" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
             android:textColorHint="@color/black">
 
             <AutoCompleteTextView
@@ -47,8 +47,8 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
             android:textColorHint="@color/black">
 
             <AutoCompleteTextView
@@ -68,8 +68,8 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
             android:textColorHint="@color/black">
 
             <EditText
@@ -88,8 +88,8 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
             android:textColorHint="@color/black">
 
             <EditText
@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/prompt_password_again"
                 android:imeActionId="@+id/register_form_finished"
-                android:imeActionLabel="@string/action_sign_up"
+                android:imeActionLabel="@string/action_register"
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
                 android:maxLines="1"
@@ -113,12 +113,12 @@
             style="?android:textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
             android:background="@drawable/round1"
             android:onClick="signUp"
-            android:text="@string/action_sign_up"
+            android:text="@string/action_register"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -127,9 +127,10 @@
             style="?android:textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin_xl"
             android:background="@drawable/round2"
             android:onClick="signIn"
             android:text="@string/action_sign_in_short"

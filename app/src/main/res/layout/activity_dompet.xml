@@ -21,9 +21,10 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
                 android:drawableStart="@drawable/ic_back"
-                android:padding="10dp"
+                android:paddingStart="@dimen/margin_sm"
+                android:paddingEnd="@dimen/margin_sm"
                 android:text="@string/back"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -32,7 +33,6 @@
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
-                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <Button
@@ -59,37 +59,35 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/activity_vertical_margin">
+                android:padding="@dimen/margin">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:alpha="0.8"
                     android:background="@color/white"
-                    android:padding="10dp"
+                    android:padding="@dimen/margin_sm"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/text_bg" />
 
                 <TextView
                     android:id="@+id/text1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="10dp"
+                    android:padding="@dimen/margin_sm"
                     android:text="@string/saldo"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/text_bg" />
 
                 <TextView
                     android:id="@+id/saldo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@id/text1"
-                    android:padding="10dp"
-                    android:paddingEnd="10sp"
-                    android:paddingStart="10sp"
+                    android:padding="@dimen/margin_sm"
                     android:text="@string/point"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_bg"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -97,7 +95,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/activity_vertical_margin"
+                android:layout_margin="@dimen/margin"
+                android:paddingBottom="@dimen/margin_xl"
                 android:background="@color/white"
                 android:orientation="vertical">
 
@@ -105,44 +104,44 @@
                     android:id="@+id/tunai"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/activity_vertical_margin"
-                    android:layout_marginStart="@dimen/activity_vertical_margin"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginEnd="@dimen/margin"
+                    android:layout_marginStart="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
                     android:background="@drawable/round1"
                     android:drawableStart="@drawable/ic_saldo"
-                    android:paddingEnd="15dp"
-                    android:paddingStart="15dp"
+                    android:paddingEnd="@dimen/margin"
+                    android:paddingStart="@dimen/margin"
                     android:text="@string/tunai"
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/text_bg"/>
 
                 <Button
                     android:id="@+id/transfer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/activity_vertical_margin"
-                    android:layout_marginStart="@dimen/activity_vertical_margin"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginEnd="@dimen/margin"
+                    android:layout_marginStart="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
                     android:background="@drawable/round1"
                     android:drawableStart="@drawable/ic_transfer"
-                    android:paddingEnd="15dp"
-                    android:paddingStart="15dp"
+                    android:paddingEnd="@dimen/margin"
+                    android:paddingStart="@dimen/margin"
                     android:text="@string/transfer"
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/text_bg" />
 
                 <Button
                     android:id="@+id/donasi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:layout_margin="@dimen/margin"
                     android:background="@drawable/round1"
                     android:drawableStart="@drawable/ic_donasi"
-                    android:paddingEnd="15dp"
-                    android:paddingStart="15dp"
+                    android:paddingEnd="@dimen/margin"
+                    android:paddingStart="@dimen/margin"
                     android:text="@string/donasi"
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/text_bg" />
 
             </LinearLayout>
         </LinearLayout>
@@ -157,7 +156,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:paddingBottom="10dp"
+            android:paddingBottom="@dimen/margin_sm"
             android:text="@string/abadan"
             android:textAlignment="center"
             android:textColor="@color/black" />
