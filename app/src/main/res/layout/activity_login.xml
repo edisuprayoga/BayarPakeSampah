@@ -14,7 +14,7 @@
         <ImageView
             android:id="@+id/logo"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="100dp"
             android:contentDescription="@string/abadan"
             android:src="@drawable/logo" />
 
@@ -22,7 +22,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margin_xl"
-            android:layout_marginTop="@dimen/margin_sm"
             android:text="@string/login"
             android:textAlignment="center"
             android:textColor="@color/black"
@@ -77,8 +76,8 @@
             style="?android:textAppearanceMedium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin"
             android:layout_marginEnd="@dimen/margin"
+            android:layout_marginStart="@dimen/margin"
             android:layout_marginTop="@dimen/margin"
             android:background="@drawable/round1"
             android:onClick="signInExistingUser"
@@ -92,8 +91,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margin_xl"
-            android:layout_marginStart="@dimen/margin"
             android:layout_marginEnd="@dimen/margin"
+            android:layout_marginStart="@dimen/margin"
             android:layout_marginTop="@dimen/margin"
             android:background="@drawable/round2"
             android:onClick="registerNewUser"

@@ -19,8 +19,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
                 android:drawableStart="@drawable/ic_back"
-                android:paddingStart="@dimen/margin_sm"
                 android:paddingEnd="@dimen/margin_sm"
+                android:paddingStart="@dimen/margin_sm"
                 android:text="@string/back"
                 android:textColor="@color/white" />
 

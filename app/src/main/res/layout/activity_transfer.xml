@@ -21,8 +21,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
                 android:drawableStart="@drawable/ic_back"
-                android:paddingStart="@dimen/margin_sm"
                 android:paddingEnd="@dimen/margin_sm"
+                android:paddingStart="@dimen/margin_sm"
                 android:text="@string/back"
                 android:textColor="@color/white" />
 
@@ -97,8 +97,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin"
-                android:paddingBottom="@dimen/margin_xl"
-                android:background="@color/white">
+                android:background="@color/white"
+                android:paddingBottom="@dimen/margin_xl">
 
                 <TableLayout
                     android:layout_width="match_parent"
@@ -113,7 +113,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="No Tujuan: "
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black" />
 
                         <EditText
                             android:id="@+id/editText2"
@@ -130,7 +130,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Jumlah: Rp. "
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black" />
 
                         <EditText
                             android:id="@+id/editText3"

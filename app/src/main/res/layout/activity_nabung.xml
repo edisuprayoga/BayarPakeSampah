@@ -20,8 +20,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
                 android:drawableStart="@drawable/ic_back"
-                android:paddingStart="@dimen/margin_sm"
                 android:paddingEnd="@dimen/margin_sm"
+                android:paddingStart="@dimen/margin_sm"
                 android:text="@string/back"
                 android:textColor="@color/white" />
 
@@ -85,7 +85,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/jenis_sampah"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black" />
 
                         <EditText
                             android:id="@+id/editText2"
@@ -102,7 +102,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/berat_kg"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black" />
 
                         <EditText
                             android:id="@+id/editText3"
@@ -140,7 +140,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/lokasi_penjemputan"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black" />
 
                         <EditText
                             android:id="@+id/editText5"

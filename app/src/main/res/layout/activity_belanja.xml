@@ -21,8 +21,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimary"
                 android:drawableStart="@drawable/ic_back"
-                android:paddingStart="@dimen/margin_sm"
                 android:paddingEnd="@dimen/margin_sm"
+                android:paddingStart="@dimen/margin_sm"
                 android:text="@string/back"
                 android:textColor="@color/white" />
 
@@ -69,8 +69,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin"
-                android:paddingBottom="@dimen/margin_xl"
-                android:background="@color/white">
+                android:background="@color/white"
+                android:paddingBottom="@dimen/margin_xl">
 
                 <TableLayout
                     android:layout_width="match_parent"
@@ -85,14 +85,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/jenis_barang"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black" />
 
                         <EditText
                             android:id="@+id/editText2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:inputType="text"/>
+                            android:inputType="text" />
                     </TableRow>
 
                     <TableRow>
@@ -101,13 +101,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/nama_barang"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black" />
 
                         <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:inputType="text"/>
+                            android:inputType="text" />
                     </TableRow>
 
                     <TableRow>
@@ -116,13 +116,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/harga"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black" />
 
                         <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:inputType="number"/>
+                            android:inputType="number" />
                     </TableRow>
 
                     <TableRow>
@@ -131,13 +131,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/nama_toko"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black" />
 
                         <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:inputType="number"/>
+                            android:inputType="number" />
                     </TableRow>
 
                     <TableRow>
@@ -146,13 +146,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/alamat_toko"
-                            android:textColor="@color/black"/>
+                            android:textColor="@color/black" />
 
                         <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:inputType="text"/>
+                            android:inputType="text" />
                     </TableRow>
 
                     <Button
@@ -180,6 +180,6 @@
             android:paddingBottom="@dimen/margin_sm"
             android:text="@string/abadan"
             android:textAlignment="center"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
     </RelativeLayout>
 </LinearLayout>

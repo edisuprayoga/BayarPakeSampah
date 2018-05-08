@@ -59,10 +59,10 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
                     android:background="@color/grey"
                     android:contentDescription="@string/info_produk"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
                     android:src="@drawable/fig1" />
             </RelativeLayout>
 
@@ -107,8 +107,8 @@
                 </TableRow>
 
                 <TableRow
-                    android:gravity="center"
                     android:layout_marginBottom="@dimen/margin"
+                    android:gravity="center"
                     android:paddingBottom="@dimen/margin"
                     android:paddingTop="@dimen/margin">
 
