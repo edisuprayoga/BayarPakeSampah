@@ -72,6 +72,27 @@
             android:layout_marginRight="@dimen/margin"
             android:textColorHint="@color/black">
 
+            <AutoCompleteTextView
+                android:id="@+id/register_telp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/telepon"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textIsSelectable="false" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:textColorHint="@color/black">
+
             <EditText
                 android:id="@+id/register_password"
                 android:layout_width="match_parent"

@@ -36,7 +36,7 @@
     <string name="nabung_pake_sampah">Nabung Pake Sampah</string>
     <string name="jenis_sampah">Jenis Sampah</string>
     <string name="berat_kg">Berat (kg)</string>
-    <string name="estimasi_harga_rp">Estimasi harga Rp.</string>
+    <string name="estimasi_harga_rp">Estimasi harga</string>
     <string name="lokasi_penjemputan">Lokasi Penjemputan</string>
     <string name="telepon">Telepon</string>
     <string name="nama">Nama</string>
@@ -48,5 +48,8 @@
     <string name="nama_toko">Nama Toko</string>
     <string name="alamat_toko">Alamat Toko</string>
     <string name="pengaturan_akun">Pengaturan Akun</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="ok">OK</string>
+    <string name="no_tujuan">No Tujuan</string>
 
 </resources>

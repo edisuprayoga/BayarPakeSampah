@@ -112,7 +112,7 @@
                             android:id="@+id/textView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="No Tujuan: "
+                            android:text="@string/no_tujuan"
                             android:textColor="@color/black" />
 
                         <EditText
@@ -129,7 +129,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Jumlah: Rp. "
+                            android:text="@string/jumlah"
                             android:textColor="@color/black" />
 
                         <EditText

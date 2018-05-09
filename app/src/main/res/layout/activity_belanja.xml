@@ -63,7 +63,8 @@
                 android:paddingStart="@dimen/margin"
                 android:text="@string/bayar_pake_sampah"
                 android:textColor="@color/black"
-                android:textSize="@dimen/text_bg" />
+                android:textSize="@dimen/text_bg"
+                android:textStyle="bold" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"

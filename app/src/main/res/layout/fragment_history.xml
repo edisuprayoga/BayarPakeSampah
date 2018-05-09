@@ -23,7 +23,9 @@
                 android:paddingStart="@dimen/margin"
                 android:text="Riwayat Transaksi"
                 android:textColor="@color/black"
-                android:textSize="@dimen/text_bg" />
+                android:textSize="@dimen/text_bg"
+                android:textStyle="bold" />
+
         </LinearLayout>
     </ScrollView>
 

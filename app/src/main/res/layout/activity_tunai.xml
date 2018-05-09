@@ -112,7 +112,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Jumlah: Rp. "
+                            android:text="@string/jumlah"
                             android:textColor="@color/black" />
 
                         <EditText
@@ -130,7 +130,7 @@
                         android:drawableStart="@drawable/ic_check"
                         android:paddingEnd="@dimen/margin"
                         android:paddingStart="@dimen/margin"
-                        android:text="OK"
+                        android:text="@string/ok"
                         android:textColor="@color/white" />
                 </TableLayout>
             </android.support.design.widget.TextInputLayout>

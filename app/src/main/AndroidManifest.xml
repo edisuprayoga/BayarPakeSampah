@@ -27,7 +27,7 @@
         <activity android:name=".InfoActivity" />
         <activity android:name=".TunaiActivity" />
         <activity android:name=".TransferActivity" />
-        <activity android:name=".DonasiActivity"></activity>
+        <activity android:name=".DonasiActivity" />
     </application>
 
 </manifest>

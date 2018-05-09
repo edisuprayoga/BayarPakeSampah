@@ -62,7 +62,8 @@
                 android:paddingStart="@dimen/margin"
                 android:text="Harga Sampah"
                 android:textColor="@color/black"
-                android:textSize="@dimen/text_bg" />
+                android:textSize="@dimen/text_bg"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </ScrollView>

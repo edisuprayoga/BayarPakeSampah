@@ -27,7 +27,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/pengaturan_akun"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/text_bg" />
+                        android:textSize="@dimen/text_bg"
+                        android:textStyle="bold" />
 
                     <Button
                         android:id="@+id/logout_btn"
@@ -106,7 +107,8 @@
 
                     </TableRow>
 
-                    <TableRow>
+                    <TableRow
+                        android:paddingBottom="@dimen/margin_sm">
 
                         <TextView
                             android:layout_width="wrap_content"
